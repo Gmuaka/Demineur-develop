@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Démineur</title>
+    <script src="lib/jquery-1.12.2.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="css/le-frog/jquery-ui.min.css" />
+</head>
+<body>
+<a href="https://github.com/Gmuaka/Demineur"> <img style="position: absolute; top: 0; right: 0; border: 0;"src="http://i.stack.imgur.com/7iEul.png">
+   
+</a>
+
+<h1 class="logo">Jeu du démineur
+ / Minesweeper Game    <span class="invisible ajax-loading"><img src="load.gif" alt="Processing..."/></span>
+</h1><t>
+<div id="minesweeper"></div>
+
+<script src="js/sweeper.js" type="text/javascript"></script>
+<script>
+    jQuery(function ($) {
+        // set a global instance of Minesweeper
+        minesweeper = new MineSweeper();
+
+        // init the (first) game
+        minesweeper.init();
+    });
+</script> <h2 class="text"><br></br> Projet informatique - Master spécialisé Data Science, ENSAE Paritech </h2> <h3 class="text"><u> Règles du jeu : </u><br><ul> <li>Lorsque vous faite un clique droit sur une case, celle-ci s'enfonce et alors : soit cette case contient une bombe et vous avez perdu, soit elle n'en contient pas et affiche un numéro. Ce numéro indique le nombre de bombes présentes parmi les 8 cases entourant la case cliquée. </li></br><li> Lorsque vous pensez qu'une case contient une bombe, vous pouvez y poser un drapeau en y faisant un clique gauche. Si vous avez un doute sur une case et ne voulez pas cliquer dessus par inadvertance, vous avez la possibilité d'y poser un point d'interrogation en y faisant 2 cliques gauches successifs. Les cases drapeaux et points d'interrogation ne sont pas enfonçable par clique droit. Si vous voulez finalement les enfoncer, vous pouvez les rendre à nouveau cliquable en doublant gauche pour une case drapeau, et en cliquant gauche une fois pour une case point d'interrogation. Le but du jeu est de découvrir toutes les cases qui ne contiennent pas de bombes. </li></ul><br> A vous de jouer!</br> 
+</body>
+</html>
+ 
